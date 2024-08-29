@@ -1,5 +1,7 @@
 import streamlit as st
 from openai import OpenAI
+
+openai_api_key = st.secrets["open_ai_key]
 client = OpenAI()
 
 audio_file = open("/path/to/file/speech.mp3", "rb")
